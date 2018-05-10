@@ -41,7 +41,6 @@ function wechatConfig() {
                 nonceStr: config_obj.nonceStr,
                 signature: config_obj.signature,
                 jsApiList: [
-                    ⁄⁄ 所有要调用的 API 都要加到这个列表中
                     'onMenuShareTimeline'
                 ]
             });

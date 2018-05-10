@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>果真才带感</title>
+    <link rel="stylesheet" type="text/css" href="./css/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  </head>
+  <body style="background-image: url('./img/background_xiyou.png')">
+    <div class="wrapper">
+      <div class="center animated pulse animation-infinite" style="width:30%;margin-top:12.5%">
+        <img src="./img/slogan-2.png" class="img-responsive">
+      </div>
+      <div class="option-area" style="visibility:hidden">
+        <p class="text-center option-p">最合适你来做的</p>
+        <a href="option1.html" class="option-btn center text-center">星冰乐</a>
+        <a href="option1.html" class="option-btn center text-center">水果茶</a>
+        <a href="option1.html" class="option-btn center text-center">创意类</a>
+      </div>
+      <div class="page-area text-center">
+        <a href="recipe_zzjm.html" id="see" class="last-page-btn center animated pulse animation-infinite">查看配方</a>
+        <a href="https://davincigourmet.tmall.com/search.htm?spm=a220m.1000858.1000725.3.2b65562ezLuNnC&user_number_id=3715008782&rn=275e95168b6b41f0e1d0497ed40901ea&keyword=%B4%EF%B7%D2%C6%E6%B9%FB%C3%C0" class="next-page-btn center animated pulse animation-infinite">更多风味</a>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+  <script>
+    let result = location.search.split(/\&{0,1}q\d=/).slice(1)
+    let name = null
+    if (result[0] === '1') {
+      if (result[1] === '1') {
+        name = 'stafs'
+      } else if (result[1] === '2') {
+        name = 'yyyyb'
+      } else {
+        name = 'aslw'
+      }
+    } else if (result[0] === '2') {
+      if (result[2] === '1') {
+        name = 'xiyou'
+      } else {
+        if (result[3] === '1') {
+          name = 'mmyh'
+        } else {
+          name = 'qqzj'
+        }
+      }
+    } else if (result[0] === '3') {
+      if (result[2] === '1') {
+        name = 'zzjm'
+      } else {
+        if (result[3] === '1') {
+          name = 'mmyh'
+        } else {
+          name = 'qqzj'
+        }
+      }
+    }
+    $("body").css("background-image", "url(./img/background_p3_" + name + ".png)")
+    $("#see").prop("href", "recipe_" + name + ".html")
+  </script>
+</html>

@@ -19,7 +19,7 @@ function goBack() {
 var mpid = 'mpid:a7d000ef-0d95-48c2-9596-31a2ba7083df';
 var share_pic = 'http://temp.luka-test.cn/img/p.jpg';
 var share_url;
-var weChatUrlBase =  'http:⁄⁄wechat.mgcc.com.cn⁄wechat⁄wxapi⁄jssdkjsonp?mpid='+ mpid +'&callback=1234&urlmode=base64&callurl=';
+var weChatUrlBase =  'http://wechat.mgcc.com.cn/wechat/wxapi/jssdkjsonp?mpid='+ mpid +'&callback=1234&urlmode=base64&callurl=';
 var weChatUrl;
 var sharetitle="找到你的本命饮品配方";
 var sharedesc="";

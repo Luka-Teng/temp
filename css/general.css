@@ -39,7 +39,7 @@ body {
 
 /*index*/
 body.bg1 {
-  background-image: url('../img/background_01.png');
+  background-image: url('../img/background_01.jpg');
 }
 .begin-area {
     margin-top: 50%;
@@ -63,7 +63,7 @@ body.bg1 {
 
 /*options*/
 body.bg2 {
-  background-image: url('../img/background_02.png');
+  background-image: url('../img/background_02.jpg');
 }
 .option-area {
     margin-top: 21%;
@@ -183,4 +183,8 @@ h1.recipe-heading {
 
 .animated.slideInLeft {
   animation-duration: 0.5s;
+}
+
+.animated.pulse {
+  animation-duration: 1.5s;
 }

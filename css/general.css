@@ -78,6 +78,9 @@ body.bg2 {
   display: block;
   background-size: 100% 100%;
 }
+.option-btn.active {
+  background-image: url(../img/p2-btn_d.png);
+}
 .option-btn + .option-btn {
   margin-top: 3.5%;
 }
@@ -105,29 +108,12 @@ body.bg2 {
   color: #fff;
   display: inline-block;
   background-size: 100% 100%;
-  margin-right: 12%;
 }
 .last-page-btn:active {
   background-image: url(../img/lastpage_d.png);
 }
 .last-page-btn:visited {
-  background-image: url(../img/lastpage_d.png);
-}
-.next-page-btn {
-  background-image: url(../img/nextpage_n.png);
-  font-size: 1.3rem;
-  width: 133px;
-  line-height: 63px;
-  height: 69px;
-  color: #fff;
-  display: inline-block;
-  background-size: 100% 100%;
-}
-.next-page-btn:active {
-  background-image: url(../img/nextpage_d.png);
-}
-.next-page-btn:visited {
-  background-image: url(../img/nextpage_d.png);
+  color: #555;
 }
 
 /*recipe*/

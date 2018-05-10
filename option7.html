@@ -13,17 +13,23 @@
         <img src="./img/slogan-2.png" class="img-responsive">
       </div>
       <div class="option-area">
-        <p class="text-center option-p">主要顾客群</p>
-        <a href="javascript:void(0)" class="option-btn center text-center animated slideInLeft" onclick="goResult()">学生</a>
-        <a href="javascript:void(0)" class="option-btn center text-center animated slideInLeft" onclick="goResult()">白领</a>
-        <a href="javascript:void(0)" class="option-btn center text-center animated slideInLeft" onclick="goResult()">高端用户</a>
+        <p class="text-center option-p">7.主要顾客群</p>
+        <a href="javascript:void(0)" class="tag option-btn center text-center animated slideInLeft">学生</a>
+        <a href="javascript:void(0)" class="tag option-btn center text-center animated slideInLeft">白领</a>
+        <a href="javascript:void(0)" class="tag option-btn center text-center animated slideInLeft">高端用户</a>
       </div>
       <div class="page-area text-center">
-        <a href="javascript:history.go(-1)" class="last-page-btn center animated pulse animation-infinite">上一页</a>
-        <a href="javascript:void(0)" class="next-page-btn center animated pulse animation-infinite">下一页</a>
+        <a href="javascript:history.go(-1)" class="last-page-btn center animated pulse animation-infinite">上一题</a>
+        <a href="javascript:void(0)" onclick="goResult()" class="next-page-btn center animated pulse animation-infinite">提交</a>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="./js/main.js"></script>
+    <script>
+      $(".tag").click(function () {
+        $(".tag").removeClass("active")
+        $(this).addClass("active")
+      })
+    </script>
   </body>
 </html>

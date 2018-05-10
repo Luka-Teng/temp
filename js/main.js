@@ -25,7 +25,7 @@ var sharetitle="找到你的本命饮品配方";
 var sharedesc="";
 function wechatConfig() {
     weChatUrl = weChatUrlBase + location.href.split('#')[0] .EncodeBase64();
-    share_url = 'temp.luka-test.cn';
+    share_url = window.location.href.split('#')[0];
     $.ajax({
         type: 'post',
         url: weChatUrl,

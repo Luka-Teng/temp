@@ -24,7 +24,7 @@ var weChatUrl;
 var sharetitle="找到你的本命饮品配方";
 var sharedesc="";
 function wechatConfig() {
-    weChatUrl = weChatUrlBase + location.href.split('#')[0] .EncodeBase64();
+    weChatUrl = weChatUrlBase + location.href.split('#')[0].EncodeBase64();
     share_url = window.location.href.split('#')[0];
     $.ajax({
         type: 'post',

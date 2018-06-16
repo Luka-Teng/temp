@@ -21,7 +21,8 @@ body {
   top: 120px;
 }
 .animated-infinite {
-  animation-iteration-count: infinite
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s !important;
 }
 .btn-tea {
   width: 55%;

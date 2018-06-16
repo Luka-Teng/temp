@@ -79,8 +79,9 @@ h1,h2,h3,h4,h5,h6,p{
   position: absolute;
   color: #ed5e37;
   font-weight: bold;
-  top: 75%;
-  width: 100%;
+  top: 74%;
+  width: 83%;
+  left: 8.5%;
   font-size: 21px;
   text-align: center;
 }

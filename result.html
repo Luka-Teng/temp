@@ -38,10 +38,10 @@
       return params
     }
     let params = getParams(location.search)
-    $('.t1').html(params['t1'])
-    $('.t2').html(params['t2'])
-    $('.t3').html(params['t3'])
+    $('.t1').html(decodeURI(params['t1']))
+    $('.t2').html(decodeURI(params['t2']))
+    $('.t3').html(decodeURI(params['t3']))
     $('.t4').prop('src', './assets/'+params['t4'])
-    $('.t5').html(params['t5'])
+    $('.t5').html(decodeURI(params['t5']))
   </script>
 </html>

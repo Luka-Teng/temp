@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Lipton</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="./css/general.css" />
+    <link rel="stylesheet" type="text/css" href="./css/animate.css" />
+    <script src='./js/general.js'></script>
+    <script src='./js/jquery.js'></script>
+  </head>
+  <body class='bg'>
+    <div class='curtain'></div>
+    <div class="main-block">
+      <img src='./assets/lipton_bg_03.png' class='full-img' />
+      <a href='./test.html' class='return'>
+        <img class='btn-tea' src='./assets/lipton_button_close.png'>
+      </a>
+
+      <div class="text-center" style="position: absolute; width: 100%; top: 21%">
+        <h1 class='t1'>你的专属新滋味是</h1>
+        <p class='t2'>回甘可口小清新的蜜桃红茶</p>
+        <h1 class='t3'>蜜桃红茶</h1>
+      </div>
+
+      <img class='t4 animated pulse animated-infinite' src='./assets/5.png' />
+
+      <h1 class='t5'>搭配芒果口感更棒哦！</h1>
+    </div>
+  </body>
+  <script>
+    function getParams(search) {
+      let params = {}
+      search.slice(1).split('&').forEach(function (param) {
+        let temp = param.split('=')
+        params[temp[0]] = temp[1]
+      })
+      return params
+    }
+    let params = getParams(location.search)
+    $('.t1').html(params['t1'])
+    $('.t2').html(params['t2'])
+    $('.t3').html(params['t3'])
+    $('.t4').prop('src', './assets/'+params['t4'])
+    $('.t5').html(params['t5'])
+  </script>
+</html>

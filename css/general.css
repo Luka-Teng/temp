@@ -1,192 +1,86 @@
-/*init*/
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
-body { background:#fff; color:#555; font-size:14px; font-family: "微软雅黑", Verdana, Arial, Helvetica, sans-serif; }
-td,th,caption { font-size:14px; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
-address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
-a { color:#555; text-decoration:none; }
-a:hover { text-decoration:none; }
-img { border:none; }
-ol,ul,li { list-style:none; }
-input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
-table { border-collapse:collapse; }
-html {overflow-y: scroll;}
-
-/*general*/
 body {
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  font-size: 16px;
+  margin: 0px
 }
-.wrapper {
+.bg {
+  background: url(../assets/lipton_bg_01.jpg);
+  background-size: 100%;
+  overflow: hidden;
+}
+.full-img {
+  width: 100%
+}
+.text-center {
+  text-align: center
+}
+.slogan {
+  width: 100%;
+  position: relative;
+  top: 120px;
+}
+.animated-infinite {
+  animation-iteration-count: infinite
+}
+.btn-tea {
+  width: 55%;
+}
+.curtain {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.35);
+  z-index: -1;
+}
+.main-block {
+  width: 100%;
   position: relative;
 }
-.img-responsive {
-  width: 100%;
+.check-btn {
+  position: absolute;
+  width: 7%;
+  min-height: 25px;
 }
-
-.center {
-  margin: 0px auto;
+.hidden {
+  display: none;
 }
-
-.text-center {
-  text-align: center;
+.return {
+  position: absolute;
+  width: 21%;
+  top: 13%;
+  right: -3%;
 }
-
-.animation-infinite {
-  animation-iteration-count: infinite;
-}
-
-/*index*/
-body.bg1 {
-  background-image: url('../img/background_01.jpg');
-}
-.begin-area {
-    margin-top: 50%;
-}
-.begin-btn {
-  background-image: url(../img/btn_n.png);
-  font-size: 2.5rem;
-  width: 164px;
-  line-height: 67px;
-  height: 70px;
-  color: #fff;
+.block {
   display: block;
-  background-size: 100% 100%;
 }
-.begin-btn:active {
-  background-image: url(../img/btn_d.png);
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0px;
 }
-.begin-btn:visited {
-  background-image: url(../img/btn_d.png);
-}
-
-/*options*/
-body.bg2 {
-  background-image: url('../img/background_02.jpg');
-}
-.option-area {
-    margin-top: 21%;
-}
-.option-btn {
-  background-image: url(../img/p2-btn_n.png);
-  font-size: 1.4rem;
-  width: 57%;
-  line-height: 46px;
-  height: 49px;
-  color: #fff;
-  display: block;
-  background-size: 100% 100%;
-}
-.option-btn + .option-btn {
-  margin-top: 3.5%;
-}
-.option-btn.active {
-  background-image: url(../img/p2-btn_d.png);
-}
-.option-btn:active {
-  background-image: url(../img/p2-btn_d.png);
-}
-.option-btn:visited {
-  background-image: url(../img/p2-btn_d.png);
-}
-.option-p {
-  color: #910012;
+.t1 {
+  color: #ed5e37;
+  font-size: 28px;
   font-weight: bold;
+}
+.t2 {
+  color: #ed5e37;
+  font-size: 16px;
+  font-weight: bold;
+}
+.t3 {
+  color: #70982c;
+  font-size: 30px;
+  margin-top: 5%;
+}
+.t4 {
+  position: absolute;
+  top: 41%;
+  width: 44%;
+  left: 26%;
+}
+.t5 {
+  position: absolute;
+  color: #ed5e37;
+  font-weight: bold;
+  top: 75%;
+  width: 100%;
   font-size: 21px;
-  margin-bottom: 5.5%;
-}
-.page-area {
-    margin-top: 17%;
-}
-.last-page-btn {
-  background-image: url(../img/lastpage_n.png);
-  font-size: 1.3rem;
-  width: 133px;
-  line-height: 63px;
-  height: 69px;
-  color: #fff;
-  display: inline-block;
-  background-size: 100% 100%;
-}
-.last-page-btn:active {
-  background-image: url(../img/lastpage_d.png);
-}
-.last-page-btn:visited {
-  background-image: url(../img/lastpage_d.png);
-}
-.next-page-btn {
-  background-image: url(../img/nextpage_n.png);
-  font-size: 1.3rem;
-  width: 133px;
-  line-height: 63px;
-  height: 69px;
-  color: #fff;
-  display: inline-block;
-  background-size: 100% 100%;
-}
-.next-page-btn:active {
-  background-image: url(../img/nextpage_d.png);
-}
-.next-page-btn:visited {
-  background-image: url(../img/nextpage_d.png);
-}
-
-/*recipe*/
-h1.recipe-heading {
-  color: #fff;
-  font-weight: 500;
-  font-size: 1.7rem;
-  letter-spacing: 2px;
   text-align: center;
-  margin-top: 40%;
-}
-.recipe-content {
-  margin-top: 10%;
-}
-.recipe-item {
-  display: flex;
-  width: 75%;
-  margin: 0px auto;
-  color: #222;
-  font-weight: 700;
-  margin-bottom: 0.3rem;
-  font-size: 14px;
-}
-.recipe-do {
-    width: 46%;
-    padding-right: 0%;
-    margin-left: 12.5%;
-    margin-top: 3%;
-}
-.recipe-procedure {
-    font-size: 14px;
-    color: #222;
-    font-weight: 700;
-    margin-bottom: 2%;
-}
-@media screen and (max-width:400px) {
-  .recipe-item {
-    font-size: 12px;
-  }
-  .recipe-procedure {
-    font-size: 12px;
-  }
-}
-.spacer {
-  flex-grow: 1;
-}
-.close-icon {
-    position: absolute;
-    right: 7%;
-    top: -15%;
-    width: 10%;
-}
-
-.animated.slideInLeft {
-  animation-duration: 0.5s;
-}
-
-.animated.pulse {
-  animation-duration: 1.5s;
 }

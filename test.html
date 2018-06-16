@@ -116,7 +116,11 @@
         } else {
           chosen_data = base_data.warm[Math.floor(Math.random() * 3)]
         }
-        location.href = location.origin + '?' + 't1=' + chosen_data.t1 + '&' + 't2=' + chosen_data.t2 + '&' + 't3=' + chosen_data.t3 + '&' +  't4=' + chosen_data.t4 + '&' +  't5=' + chosen_data.t5
+        if (!data) {
+          alert('请选择选项')
+          return
+        }
+        location.href = location.origin + '/result.html' + '?' + 't1=' + chosen_data.t1 + '&' + 't2=' + chosen_data.t2 + '&' + 't3=' + chosen_data.t3 + '&' +  't4=' + chosen_data.t4 + '&' +  't5=' + chosen_data.t5
       })
     </script>
   </body>

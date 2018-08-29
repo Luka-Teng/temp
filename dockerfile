@@ -44,6 +44,8 @@ sed -i '1i\xxx' /etc/apt/sources.list
 更改nginx conf的user
 运行nginx
 
+docker run -d -p 5002:8080 --name jenkins -u root -v /var/jenkins_home:/var/jenkins_home jenkins/jenkins
+
 deb http://mirrors.163.com/debian/ jessie main non-free contrib \
 deb http://mirrors.163.com/debian/ jessie-updates main non-free contrib \
 deb http://mirrors.163.com/debian/ jessie-backports main non-free contrib \
